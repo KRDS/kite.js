@@ -1,4 +1,13 @@
-define('kite/asset', ['app/assets', 'kite/loaders/pxloader.min'], function(config)
+define('kite/asset', [
+    'app/assets', 
+    'libs/krds-lazyload', 
+    'libs/fontjs/Font.min', 
+    'libs/PxLoader', 
+    'libs/PxLoaderImage', 
+    'libs/PxLoaderSound',
+    'libs/PxLoaderVideo',
+    'libs/PxLoader-font/index'
+], function(config)
 {
 	return {
 
