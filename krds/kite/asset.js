@@ -1,11 +1,12 @@
 define('kite/asset', [
     'app/assets', 
-    'libs/krds-lazyload', 
+    'libs/krds-lazyload/lazyload', 
     'libs/fontjs/Font.min', 
     'libs/PxLoader', 
     'libs/PxLoaderImage', 
     'libs/PxLoaderSound',
     'libs/PxLoaderVideo',
+    'libs/krds-lazyload/PxLoaderCss',
     'libs/PxLoader-font/index'
 ], function(config)
 {
