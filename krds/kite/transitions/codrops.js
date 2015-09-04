@@ -1,4 +1,4 @@
-define(['kite/transition', 'kite/helpers/codrops/transition'], function(Transition, pt)
+define(['kite/transition', 'libs/codrops-pt/js/pagetransitions'], function(Transition, pt)
 {
 	'use strict';
 
