@@ -1,10 +1,13 @@
 var modules	=	['module', 'app/assets', 'kite/asset'];
 
 if( ! window.JSON || ! window.JSON.parse || ! window.JSON.stringify)
-	modules.push('json');
+	modules.push('libs/json3/lib/json3.min');
 
 if( ! window.console)
-	modules.push('log');
+	modules.push('libs/console-polyfill/index');
+
+if( ! document.querySelector)
+	modules.push('libs/qs-polyfill/index');
 
 define('kite/loader', modules, function(Module, Config, Asset)
 {	
