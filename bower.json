@@ -6,18 +6,15 @@
 	"requirejs": "2.1.x",
 	"history.js": "1.8.X",
 	"console-polyfill": "0.2.x",
-	"modernizr": "2.8.x",
+	"qs-polyfill": "https://gist.githubusercontent.com/chrisjlee/8960575/raw/773c8f0012522dc98f03d0f738e81bd17a95930b/querySelector.polyfill.js"
 	"nprogress": "0.2.x",
 	"PxLoader": "latest",
 	"PxLoader-font": "https://raw.githubusercontent.com/thinkpixellab/PxLoader/fonts/PxLoaderFont.js",
 	"fontjs": "latest",
 	"krds-lazyload": "https://github.com/krds/lazyload.git#master",
-	"krds-kdialog": "https://github.com/moorthy-g/kdialog.git#master",
 	"codrops-pt": "https://github.com/krds/PageTransitions.git#standalone",
-	"normalize-css": "3.0.x",
-	"html5shiv": "3.7.x",
-	"json3": "latest",
-	"qs-polyfill": "https://gist.githubusercontent.com/chrisjlee/8960575/raw/773c8f0012522dc98f03d0f738e81bd17a95930b/querySelector.polyfill.js"
+	"modernizr": "2.8.x",
+	"json3": "latest"
   }
 }
 
