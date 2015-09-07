@@ -1,3 +1,24 @@
+/* Dynamic shim */
+requirejs.config({
+    shim: {
+		'libs/PxLoader/PxLoaderImage': {
+			deps: ['libs/PxLoader/PxLoader']
+		},
+		'libs/PxLoader/PxLoaderSound': {
+			deps: ['libs/PxLoader/PxLoader']
+		},
+		'libs/PxLoader/PxLoaderVideo': {
+			deps: ['libs/PxLoader/PxLoader']
+		},
+		'libs/krds-lazyload/PxLoaderCss': {
+			deps: ['libs/PxLoader/PxLoader', 'libs/krds-lazyload/lazyload']
+		},
+		'libs/PxLoader-font/index': {
+			deps: ['libs/PxLoader/PxLoader', 'libs/fontjs/Font.min']
+		}
+	}
+});
+
 define('kite/asset', [
     'app/assets', 
     'libs/krds-lazyload/lazyload', /* PxLoaderCss */
