@@ -4,6 +4,7 @@
 
   "dependencies": {
 	"requirejs": "2.1.x",
+	"json3": "latest",
 	"history.js": "1.8.X",
 	"console-polyfill": "0.2.x",
 	"qs-polyfill": "https://gist.githubusercontent.com/chrisjlee/8960575/raw/773c8f0012522dc98f03d0f738e81bd17a95930b/querySelector.polyfill.js",
@@ -11,8 +12,7 @@
 	"PxLoader": "latest",
 	"PxLoader-font": "https://raw.githubusercontent.com/thinkpixellab/PxLoader/fonts/PxLoaderFont.js",
 	"fontjs": "latest",
-	"krds-lazyload": "https://github.com/krds/lazyload.git#master",
-	"json3": "latest"
+	"krds-lazyload": "https://github.com/krds/lazyload.git#master"
   }
 }
 
