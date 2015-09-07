@@ -6,7 +6,7 @@
 	"requirejs": "2.1.x",
 	"history.js": "1.8.X",
 	"console-polyfill": "0.2.x",
-	"qs-polyfill": "https://gist.githubusercontent.com/chrisjlee/8960575/raw/773c8f0012522dc98f03d0f738e81bd17a95930b/querySelector.polyfill.js"
+	"qs-polyfill": "https://gist.githubusercontent.com/chrisjlee/8960575/raw/773c8f0012522dc98f03d0f738e81bd17a95930b/querySelector.polyfill.js",
 	"nprogress": "0.2.x",
 	"PxLoader": "latest",
 	"PxLoader-font": "https://raw.githubusercontent.com/thinkpixellab/PxLoader/fonts/PxLoaderFont.js",
