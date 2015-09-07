@@ -1,34 +1,34 @@
 /* Dynamic shim */
 requirejs.config({
     shim: {
-		'libs/PxLoader/PxLoaderImage': {
-			deps: ['libs/PxLoader/PxLoader']
+		'_kdeps/PxLoader/PxLoaderImage': {
+			deps: ['_kdeps/PxLoader/PxLoader']
 		},
-		'libs/PxLoader/PxLoaderSound': {
-			deps: ['libs/PxLoader/PxLoader']
+		'_kdeps/PxLoader/PxLoaderSound': {
+			deps: ['_kdeps/PxLoader/PxLoader']
 		},
-		'libs/PxLoader/PxLoaderVideo': {
-			deps: ['libs/PxLoader/PxLoader']
+		'_kdeps/PxLoader/PxLoaderVideo': {
+			deps: ['_kdeps/PxLoader/PxLoader']
 		},
-		'libs/krds-lazyload/PxLoaderCss': {
-			deps: ['libs/PxLoader/PxLoader', 'libs/krds-lazyload/lazyload']
+		'_kdeps/krds-lazyload/PxLoaderCss': {
+			deps: ['_kdeps/PxLoader/PxLoader', '_kdeps/krds-lazyload/lazyload']
 		},
-		'libs/PxLoader-font/index': {
-			deps: ['libs/PxLoader/PxLoader', 'libs/fontjs/Font.min']
+		'_kdeps/PxLoader-font/index': {
+			deps: ['_kdeps/PxLoader/PxLoader', '_kdeps/fontjs/Font.min']
 		}
 	}
 });
 
 define('kite/asset', [
     'app/assets', 
-    'libs/krds-lazyload/lazyload', /* PxLoaderCss */
-    'libs/fontjs/Font.min',  /* PxFont */
-    'libs/PxLoader/PxLoader', /* PxImage, PxSound, PxVideo*/
-    'libs/PxLoader/PxLoaderImage', /* shim deps: PxLoader*/
-    'libs/PxLoader/PxLoaderSound', /* shim deps: PxLoader*/
-    'libs/PxLoader/PxLoaderVideo', /* shim deps: PxLoader*/
-    'libs/krds-lazyload/PxLoaderCss', /* shim deps: lazyload*/
-    'libs/PxLoader-font/index' /* shim deps: Font*/
+    '_kdeps/krds-lazyload/lazyload', /* PxLoaderCss */
+    '_kdeps/fontjs/Font.min',  /* PxFont */
+    '_kdeps/PxLoader/PxLoader', /* PxImage, PxSound, PxVideo*/
+    '_kdeps/PxLoader/PxLoaderImage', /* shim deps: PxLoader*/
+    '_kdeps/PxLoader/PxLoaderSound', /* shim deps: PxLoader*/
+    '_kdeps/PxLoader/PxLoaderVideo', /* shim deps: PxLoader*/
+    '_kdeps/krds-lazyload/PxLoaderCss', /* shim deps: lazyload*/
+    '_kdeps/PxLoader-font/index' /* shim deps: Font*/
 ], function(config)
 {
     return {

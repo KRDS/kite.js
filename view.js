@@ -1,8 +1,5 @@
 var modules = ['module', 'kite/loader', 'kite/transition', 'jquery'];
 
-if( ! (!! (window.history && history.pushState)))
-	modules.push('libs/history.js/scripts/bundled/html4+html5/native.history'); //only load 23kb when required.
-
 define('kite/view', modules, function(Module, Loader, Transition)
 {
 	return {
