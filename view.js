@@ -25,6 +25,9 @@ define('kite/view', modules, function(Module, Loader, Transition)
 				_onViewRendered,
 				url;
 
+			if(_this._busy)
+				return;
+
 			var mk		=	{_as_view : 1};
 			data		=	$.extend(data, mk) || mk;
 
@@ -125,7 +128,7 @@ define('kite/view', modules, function(Module, Loader, Transition)
 			}
 
 			_loader.start();
-									
+
 			$.ajax(
 			{
 				cache		:	false,
