@@ -9,7 +9,6 @@ define('kite/view', modules, function(Module, Loader, Transition)
 
 		//Used for HTML4 browser using History.js to ignore "statechange" event on pushState or replaceState calls
 		_stateLocked	: true,
-		_busy			: false,
 
 		supports_history_api: function ()
 		{
@@ -129,7 +128,6 @@ define('kite/view', modules, function(Module, Loader, Transition)
 			}
 
 			_loader.start();
-			_this._busy	=	true;
 
 			$.ajax(
 			{
@@ -155,7 +153,6 @@ define('kite/view', modules, function(Module, Loader, Transition)
 				complete: function()
 				{
 					_this._stateLocked	=	false;
-					_this._busy			=	false;
 				}
 			});
 
