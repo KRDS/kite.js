@@ -1,34 +1,34 @@
 /* Dynamic shim */
 requirejs.config({
     shim: {
-		'PxLoaderImage': {
-			deps: ['PxLoader']
+		'pxloaderImage': {
+			deps: ['pxloader']
 		},
-		'PxLoaderSound': {
-			deps: ['PxLoader']
+		'pxloaderSound': {
+			deps: ['pxloader']
 		},
-		'PxLoaderVideo': {
-			deps: ['PxLoader']
+		'pxloaderVideo': {
+			deps: ['pxloader']
 		},
-		'_kdeps/krds-lazyload/PxLoaderCss': {
-			deps: ['PxLoader', '_kdeps/krds-lazyload/lazyload']
+		'_kdeps/krds-lazyload/pxloaderCss': {
+			deps: ['pxloader', '_kdeps/krds-lazyload/lazyload']
 		},
-		'_kdeps/PxLoader-font/index': {
-			deps: ['PxLoader', '_kdeps/fontjs/Font.min']
+		'_kdeps/pxloader-font/index': {
+			deps: ['pxloader', '_kdeps/fontjs/Font.min']
 		}
 	}
 });
 
 define('kite/asset', [
     'app/assets', 
-    '_kdeps/krds-lazyload/lazyload', /* PxLoaderCss */
+    '_kdeps/krds-lazyload/lazyload', /* pxloaderCss */
     '_kdeps/fontjs/Font.min',  /* PxFont */
-    'PxLoader', /* PxImage, PxSound, PxVideo*/
-    'PxLoaderImage', /* shim deps: PxLoader*/
-    'PxLoaderSound', /* shim deps: PxLoader*/
-    'PxLoaderVideo', /* shim deps: PxLoader*/
-    '_kdeps/krds-lazyload/PxLoaderCss', /* shim deps: lazyload*/
-    '_kdeps/PxLoader-font/index' /* shim deps: Font*/
+    'pxloader', /* PxImage, PxSound, PxVideo*/
+    'pxloaderImage', /* shim deps: pxloader*/
+    'pxloaderSound', /* shim deps: pxloader*/
+    'pxloaderVideo', /* shim deps: pxloader*/
+    '_kdeps/krds-lazyload/pxloaderCss', /* shim deps: lazyload*/
+    '_kdeps/pxloader-font/index' /* shim deps: Font*/
 ], function(config)
 {
     return {
@@ -52,7 +52,7 @@ define('kite/asset', [
             /**
              * Assets loading:
              *	-	func assets
-             *	-	pxLoader assets (css, img, font, sound, video)
+             *	-	pxloader assets (css, img, font, sound, video)
              *	-	requireJs assets (js)
              */
 
@@ -126,7 +126,7 @@ define('kite/asset', [
             //Static assets by us.
             assets	=	[].concat(fonts).concat(others);
 
-            var px	=	new PxLoader();
+            var px	=	new pxloader();
             var asset, fontSupport;
 
             fontSupport	=	typeof px.addFont === 'function' && window.Font;
