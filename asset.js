@@ -10,10 +10,10 @@ requirejs.config({
 		'pxloaderVideo': {
 			deps: ['pxloader']
 		},
-		'_kdeps/krds-lazyload/PxLoaderCss': {
+		'pxLoaderCss': {
 			deps: ['pxloader', '_kdeps/krds-lazyload/lazyload']
 		},
-		'_kdeps/PxLoader-font/index': {
+		'pxloaderFont': {
 			deps: ['pxloader', '_kdeps/fontjs/Font.min']
 		}
 	}
