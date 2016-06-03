@@ -13,7 +13,7 @@ requirejs.config({
 		'_kdeps/krds-lazyload/PxLoaderCss': {
 			deps: ['pxloader', '_kdeps/krds-lazyload/lazyload']
 		},
-		'_kdeps/pxloader-font/index': {
+		'_kdeps/PxLoader-font/index': {
 			deps: ['pxloader', '_kdeps/fontjs/Font.min']
 		}
 	}
@@ -28,7 +28,7 @@ define('kite/asset', [
     'pxloaderSound', /* shim deps: pxloader*/
     'pxloaderVideo', /* shim deps: pxloader*/
     '_kdeps/krds-lazyload/PxLoaderCss', /* shim deps: lazyload*/
-    '_kdeps/pxloader-font/index' /* shim deps: Font*/
+    '_kdeps/PxLoader-font/index' /* shim deps: Font*/
 ], function(config)
 {
     return {
