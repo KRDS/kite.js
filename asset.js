@@ -126,7 +126,7 @@ define('kite/asset', [
             //Static assets by us.
             assets	=	[].concat(fonts).concat(others);
 
-            var px	=	new pxloader();
+            var px	=	new PxLoader();
             var asset, fontSupport;
 
             fontSupport	=	typeof px.addFont === 'function' && window.Font;
