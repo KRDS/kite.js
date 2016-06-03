@@ -27,7 +27,7 @@ define('kite/asset', [
     'pxloaderImage', /* shim deps: pxloader*/
     'pxloaderSound', /* shim deps: pxloader*/
     'pxloaderVideo', /* shim deps: pxloader*/
-    '_kdeps/krds-lazyload/pxloaderCss', /* shim deps: lazyload*/
+    '_kdeps/krds-lazyload/PxLoaderCss', /* shim deps: lazyload*/
     '_kdeps/pxloader-font/index' /* shim deps: Font*/
 ], function(config)
 {
