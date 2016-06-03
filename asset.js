@@ -1,20 +1,20 @@
 /* Dynamic shim */
 requirejs.config({
     shim: {
-		'_kdeps/PxLoader/PxLoaderImage': {
-			deps: ['_kdeps/PxLoader/PxLoader']
+		'PxLoaderImage': {
+			deps: ['PxLoader']
 		},
-		'_kdeps/PxLoader/PxLoaderSound': {
-			deps: ['_kdeps/PxLoader/PxLoader']
+		'PxLoaderSound': {
+			deps: ['PxLoader']
 		},
-		'_kdeps/PxLoader/PxLoaderVideo': {
-			deps: ['_kdeps/PxLoader/PxLoader']
+		'PxLoaderVideo': {
+			deps: ['PxLoader']
 		},
 		'_kdeps/krds-lazyload/PxLoaderCss': {
-			deps: ['_kdeps/PxLoader/PxLoader', '_kdeps/krds-lazyload/lazyload']
+			deps: ['PxLoader', '_kdeps/krds-lazyload/lazyload']
 		},
 		'_kdeps/PxLoader-font/index': {
-			deps: ['_kdeps/PxLoader/PxLoader', '_kdeps/fontjs/Font.min']
+			deps: ['PxLoader', '_kdeps/fontjs/Font.min']
 		}
 	}
 });
@@ -23,10 +23,10 @@ define('kite/asset', [
     'app/assets', 
     '_kdeps/krds-lazyload/lazyload', /* PxLoaderCss */
     '_kdeps/fontjs/Font.min',  /* PxFont */
-    '_kdeps/PxLoader/PxLoader', /* PxImage, PxSound, PxVideo*/
-    '_kdeps/PxLoader/PxLoaderImage', /* shim deps: PxLoader*/
-    '_kdeps/PxLoader/PxLoaderSound', /* shim deps: PxLoader*/
-    '_kdeps/PxLoader/PxLoaderVideo', /* shim deps: PxLoader*/
+    'PxLoader', /* PxImage, PxSound, PxVideo*/
+    'PxLoaderImage', /* shim deps: PxLoader*/
+    'PxLoaderSound', /* shim deps: PxLoader*/
+    'PxLoaderVideo', /* shim deps: PxLoader*/
     '_kdeps/krds-lazyload/PxLoaderCss', /* shim deps: lazyload*/
     '_kdeps/PxLoader-font/index' /* shim deps: Font*/
 ], function(config)
