@@ -164,7 +164,7 @@ define('kite/asset', [
                 {
                     case 'img':
                         pxAssetsCount++;
-                        f = function(asset){px.addImage(asset);};
+                        f = function(asset){px.addImage(asset, null, null, {});};
                     break;
 
                     case 'font':
